@@ -38,3 +38,21 @@ class CreateTrainsTable extends Migration
         Schema::dropIfExists('trains');
     }
 }
+
+
+
+// commento: In mySQL si traduce cosi
+// CREATE TABLE `trains` (
+//     `id` bigint unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
+//     `azienda` varchar(255) NOT NULL,
+//     `stazione_di_partenza` varchar(255) NOT NULL,
+//     `stazione_di_arrivo` varchar(255) NOT NULL,
+//     `orario_di_partenza` time NOT NULL,
+//     `orario_di_arrivo` time NOT NULL,
+//     `codice_treno` varchar(255) NOT NULL,
+//     `numero_carrozze` int NOT NULL,
+//     `in_orario` tinyint(1) NOT NULL DEFAULT 1,
+//     `cancellato` tinyint(1) NOT NULL DEFAULT 0,
+//     `created_at` timestamp NULL DEFAULT NULL,
+//     `updated_at` timestamp NULL DEFAULT NULL
+//   );
